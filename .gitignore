@@ -1,37 +1,25 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+# Godot 4+ specific ignores
+.godot/
 
-# dependencies
-node_modules/
+# Godot-specific ignores
+.import/
+export.cfg
+export_presets.cfg
 
-# Expo
-.expo/
-dist/
-web-build/
-expo-env.d.ts
+# Imported translations (automatically generated from CSV files)
+*.translation
 
-# Native
-.kotlin/
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
+# Mono-specific ignores
+.mono/
+data_*/
+mono_crash.*.json
 
-# Metro
-.metro-health-check*
-
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
+# System/Editor-specific ignores
+.tmp/
 .DS_Store
-*.pem
+Thumbs.db
 
-# local env files
-.env*.local
-
-# typescript
-*.tsbuildinfo
+# Node.js (from previous React Native project)
+node_modules/
+package-lock.json
+package.json 
